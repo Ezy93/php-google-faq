@@ -52,6 +52,24 @@
     <title>php google FAQ</title>
 </head>
 <body>
+    <header>
+        <nav class="container-fluid">
+            <div class="row">
+                <div class="col-6 my-logo d-flex flex-row">
+                    <div>
+                        <img src="" alt="google logo">
+                    </div>
+                    <p>Privacy e termini</p>
+                </div>
+                <div class="col-6 my-menu">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6"></div>
+            </div>
+        </nav>
+    </header>
     <main>
         <div class="container">
             <div class="row pt-5 mt-5">
