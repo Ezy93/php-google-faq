@@ -20,7 +20,7 @@
                 "Sappiamo che la sicurezza e la privacy sono importanti per te e lo sono anche per noi. Per noi è imperativo offrire un'elevata sicurezza e assicurarti che le tue informazioni sono al sicuro e accessibili quando ne hai bisogno.",
                 "Siamo costantemente al lavoro per garantire un'elevata sicurezza, proteggere la tua privacy e rendere Google ancora più efficace ed efficiente per te. Spendiamo centinaia di milioni di dollari ogni anno per la sicurezza e ci avvaliamo di esperti di fama mondiale in materia di sicurezza dei dati per mantenere le tue informazioni al sicuro. Abbiamo inoltre sviluppato strumenti per la sicurezza e la privacy di facile utilizzo come Google Dashboard, la verifica in due passaggi e Impostazioni annunci. Così, per quanto riguarda le informazioni che condividi con Google, hai il massimo controllo.",
                 "Puoi leggere ulteriori informazioni sulla sicurezza online, incluso come proteggere te e la tua famiglia online, nel <a href='#'>Centro Google per la sicurezza online</a>.",
-                "Scopri quali misure adottiamo per garantire protezione e sicurezza alle tue informazioni personali, lasciando a te il controllo.",
+                "<a href='#'>Scopri</a> quali misure adottiamo per garantire protezione e sicurezza alle tue informazioni personali, lasciando a te il controllo.",
                 
             ]
         ],
@@ -56,8 +56,10 @@
         <div class="container">
             <div class="row pt-5 mt-5">
                 <div class="col-8 offset-2">
+                    <!-- ciclo che itera attraverso l'array delle faqs -->
                     <?php for($i = 0; $i < count($faqs); $i++){ ?>
                         <h5 class="fw-bold py-3"> <?php echo $faqs[$i]['question'] ?></h5>
+                        <!-- ciclo che itera attraverso l'array delle singole answer contenute nei vari elementi dell'array $faqs -->
                         <?php for($x = 0; $x < count($faqs[$i]['answer']); $x++){ ?>
                             <p class="pb-2"> <?php echo $faqs[$i]['answer'][$x] ?> </p>
                         <?php } ?>
