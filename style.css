@@ -5,3 +5,25 @@ a{
 p{
     font-size: .95rem;
 }
+
+ul{
+    list-style: none;
+}
+
+nav{
+    top: 0;
+}
+
+div.container{
+    margin-top: 202px;
+}
+
+div.my-logo{
+    height: 2.5rem;
+}
+
+p.my-grey,
+a.my-grey{
+    color: rgb(109, 109, 109);
+}
+

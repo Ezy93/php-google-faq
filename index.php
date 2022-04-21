@@ -56,29 +56,50 @@
 
 <body>
     <header>
-        <nav class="container-fluid">
+        <nav class="container-fluid px-0 position-fixed bg-light">
             <div class="row">
-                <div class="col-6 my-logo d-flex flex-row">
-                    <div>
-                        <img src="" alt="google logo">
+                <div class="col-6 d-flex flex-row">
+                    <div class="my-logo d-flex flex-row  m-3">
+                        <img class="my-img-logo h-100 d-inline" src="https://1000marche.net/wp-content/uploads/2020/03/Google-logo.png" alt="google logo">
+                        <p class="fs-4 m-0 my-grey">Privacy e termini</p>
                     </div>
-                    <p>Privacy e termini</p>
                 </div>
                 <div class="col-6 my-menu d-flex flex-row justify-content-end">
                     
                     <div class="my-user">
-                        <p>f</p>
+                        <p class="fs-4 m-3 bg-success px-3 rounded-circle text-white">f</p>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-6"></div>
+                <div class="col-7">
+                    <ul class="d-flex list-style-none ms-3 m-0 ps-0 pb-1">
+                        <li class="pe-3 ">
+                            <a href="#" class="my-grey">Introduzione</a>
+                        </li>
+                        <li class="px-3 ">
+                            <a href="#" class="my-grey">Norme sulla privacy</a>
+                        </li>
+                        <li class="px-3 ">
+                            <a href="#" class="my-grey">Termini di servizio</a>
+                        </li>
+                        <li class="px-3 ">
+                            <a href="#" class="my-grey">Tecnologie</a>
+                        </li>
+                        <li class="px-3 ">
+                            <a href="#" class="my-grey">Domande frequenti</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
             </div>
+            <hr class="my-0">
         </nav>
     </header>
     <main>
         <div class="container">
-            <div class="row pt-5 mt-5">
+            <div class="row">
                 <div class="col-10 offset-1">
                     <!-- ciclo che itera attraverso l'array delle faqs -->
                     <?php for($i = 0; $i < count($faqs); $i++){ ?>
